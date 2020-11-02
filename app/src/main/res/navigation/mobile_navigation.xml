@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_reading_club">
+
+    <fragment
+        android:id="@+id/navigation_reading_club"
+        android:name="com.lacapillasv.app.ui.readingclub.ReadingClubFragment"
+        android:label="@string/title_reading_club"
+        tools:layout="@layout/fragment_reading_club" >
+        <action
+            android:id="@+id/action_reading_club_to_guides"
+            app:destination="@id/guidesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_preachings"
+        android:name="com.lacapillasv.app.ui.preachings.videos.VideosFragment"
+        android:label="@string/title_preachings"
+        tools:layout="@layout/fragment_videos" />
+
+    <fragment
+        android:id="@+id/navigation_knowus"
+        android:name="com.lacapillasv.app.ui.knowus.KnowUsFragment"
+        android:label="@string/title_know_us"
+        tools:layout="@layout/fragment_knowus" />
+    <fragment
+        android:id="@+id/guidesFragment"
+        android:name="com.lacapillasv.app.ui.readingclub.GuidesFragment"
+        android:label="fragment_guides"
+        tools:layout="@layout/fragment_guides" >
+        <argument
+            android:name="bookId"
+            app:argType="string" />
+        <argument
+            android:name="bookName"
+            app:argType="string" />
+    </fragment>
+</navigation>

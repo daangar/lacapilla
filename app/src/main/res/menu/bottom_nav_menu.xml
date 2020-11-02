@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_reading_club"
+        android:icon="@drawable/ic_reading_club"
+        android:title="@string/title_reading_club" />
+
+    <item
+        android:id="@+id/navigation_preachings"
+        android:icon="@drawable/ic_preachings"
+        android:title="@string/title_preachings"
+        />
+
+    <item
+        android:id="@+id/navigation_ministries"
+        android:icon="@drawable/common_full_open_on_phone"
+        android:title="@string/title_ministries"
+        />
+
+    <item
+        android:id="@+id/navigation_knowus"
+        android:icon="@drawable/ic_knowus"
+        android:title="@string/title_know_us" />
+</menu>

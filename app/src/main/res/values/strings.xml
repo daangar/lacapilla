@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">La Capilla</string>
+    <string name="title_reading_club">CLUB</string>
+    <string name="title_preachings">PREDICACIONES</string>
+    <string name="title_know_us">CONÓCENOS</string>
+    <string name="tab_title_bible">Biblia</string>
+    <string name="tab_title_related_book">Libro Afin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_ministries">MINISTERIOS</string>
+</resources>

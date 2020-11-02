@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginBottom="15dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/color_white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="false"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:stateListAnimator="@null"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            >
+
+            <TextView
+                android:id="@+id/tvMonth"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/gotham_ultra"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:gravity="bottom|center"
+                tools:text="MAR"
+                />
+
+            <TextView
+                android:id="@+id/tvDay"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/gotham_ultra"
+                android:layout_below="@id/tvMonth"
+                android:layout_marginStart="5dp"
+                android:gravity="top|center"
+                tools:text="31"
+                />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:fontFamily="@font/gotham_book"
+                android:gravity="bottom"
+                android:layout_toEndOf="@id/tvMonth"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Mateo 11" />
+
+
+            <TextView
+                android:id="@+id/tvSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:fontFamily="@font/gotham_book"
+                android:gravity="top"
+                android:layout_toEndOf="@id/tvMonth"
+                android:layout_below="@+id/tvTitle"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Club de Lectura" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
